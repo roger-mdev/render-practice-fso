@@ -9,7 +9,7 @@ if (process.argv.length < 3) {
 
 const password = process.argv[2]
 
-const url = `mongodb+srv://thewiris:${password}@cluster0.jhijkav.mongodb.net/?appName=Cluster0`
+const url = `mongodb://thewiris:${password}@ac-r1sz9no-shard-00-00.jhijkav.mongodb.net:27017,ac-r1sz9no-shard-00-01.jhijkav.mongodb.net:27017,ac-r1sz9no-shard-00-02.jhijkav.mongodb.net:27017/?ssl=true&replicaSet=atlas-uxsdvq-shard-0&authSource=admin&appName=Cluster0`
 
 mongoose.set('strictQuery',false)
 
